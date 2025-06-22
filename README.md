@@ -28,5 +28,5 @@ A simple and flexible Python command-line tool to convert temperatures between *
 Clone the repo:
 
 ```bash
-git clone https://github.com/your-username/temperature-cli.git
+git clone https://github.com/NalgondaLokesh/converter.py.git
 cd temperature-cli
