@@ -1,0 +1,112 @@
+body {
+  background: #fdf1fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mew {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+/* Tail */
+.tail {
+  position: absolute;
+  width: 20px;
+  height: 150px;
+  background: #f4c8f4;
+  border-radius: 50% 50% 0 0;
+  transform: rotate(-30deg);
+  top: -50px;
+  left: 140px;
+}
+
+/* Ears */
+.ear {
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  background: #f4c8f4;
+  border-radius: 50% 50% 0 0;
+  top: -20px;
+}
+.ear.left {
+  left: 10px;
+  transform: rotate(-20deg);
+}
+.ear.right {
+  right: 10px;
+  transform: rotate(20deg);
+}
+
+/* Face */
+.face {
+  width: 100%;
+  height: 100%;
+  background: #f4c8f4;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 0 3px #e8aee8;
+}
+
+/* Eyes */
+.eye {
+  width: 35px;
+  height: 50px;
+  background: #4ab8ff;
+  border-radius: 50%;
+  position: absolute;
+  top: 60px;
+}
+.eye.left {
+  left: 35px;
+}
+.eye.right {
+  right: 35px;
+}
+.shine {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+/* Mouth */
+.mouth {
+  width: 30px;
+  height: 15px;
+  border-bottom: 3px solid #aa5da9;
+  border-radius: 0 0 30px 30px;
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Add blink animation to eyes */
+.eye {
+  width: 35px;
+  height: 50px;
+  background: #4ab8ff;
+  border-radius: 50%;
+  position: absolute;
+  top: 60px;
+  animation: blink 4s infinite;
+  transform-origin: center center;
+}
+
+@keyframes blink {
+  0%, 95%, 100% {
+    transform: scaleY(1);
+  }
+  97% {
+    transform: scaleY(0.1);
+  }
+  98.5% {
+    transform: scaleY(1);
+  }
+}
